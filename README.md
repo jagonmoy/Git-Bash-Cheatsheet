@@ -1,48 +1,64 @@
 
-### For making a Directory : mkdir folder_name
-   ## E.g : mkdir myfolder <br>
+- ### For making a Directory : 
+      mkdir directory_name 
+- ### For Changing the Directory : 
+      cd directory_name 
+- ### Going back to previous directory
+      cd ..
+- ### Going back to root directory
+      cd ../
+- ### For showing all the directories/files in current path
+      ls
+- ### For Creating a file in a directory/folder : 
+      touch filename.fileExtension
+- ### For Getting Path of Current directory
+      pwd
+- ### For clearing all the command history
+      clear
+- ### For initializing a git repository : 
+      git init
+- ### For Cloning A repository : 
+      git clone HTTPS_link_of_GITHUB_repository
+- ### For showing all the changes made in a repository : 
+      git status
+- ### For staging a particular file which is not staged :
+      git add filename.fileExtension
+- ### For staging all the files 
+      git add -A
+  ### or
+      git add --all
+- ### For staging all the files which are descendant of current directory
+      git add .
+- ### For staging all the files except the deleted files
+      git add *.fileExtension
+- ### For staging all the files of a similar type
+      git add 
 
-### For Cloning A repository : git clone HTTPS_link_of_repository
-   ## E.g : git clone https://github.com/jagonmoy/Git-Bash-Cheatsheet.git <br>
+  ### One may think that "git add ." and "git add --all" are same . But They are not same If current directory is a root directory then "git add ." and "git add --all" will be same otherwise they are not same . "git add ." only stage the files which are descendant of current directory <br><br>
+- ### For unstaging all the staged files 
+      git reset
+- ### For commiting Locally : 
+      git commit     
+  ### or 
+      git commit -m "Reason for Commit" 
+  ### or 
+      git commit -m "Reason for Commit" -m "description of commit"
+- ### For Unstaging all the committed files 
+      git reset HEAD~
+- ###  For getting the deleted files back
+      git reset --hard
+- ### For deleting a file which is staged after updating / not totally updated 
+      git rm fileName.fileExtension
+- ### For deleting a file forcefully ( That means the file is not staged after updating)
+      git rm fileName.fileExtension -f
+- ### file will not be deleted in actual working directory but it will be showed in the commit that it is deleted
+      git rm --cached fileName.fileExtension
+- ### for deleting all the files in the folder
+      git rm folderName
+- ### for deleting all the files/directories that are descendant to the folder
+      git rm -r folderName
 
-### For Changing the Directory : cd directory_name
-   ## E.g : Suppose there is a folder "MyFolder"  <br>
-        ## cd MyFolder
 
-### For Creating a file in a directory/folder : touch filename.extension
-   ## E.g : Suppose I want to create a file name file1.txt in current directory 
-      ## touch file1.txt
-
-### For initializing a git repository : git init
-
-### 4. For showing all the files in a repository which were updated,deleted or created : git status
-### 5. For Tracking a particular file which is not tracked : git add file_name_with_extension
-### 6. For Tracking all the files including Untracked,modified : git add .
-   <br> It is recommended to use "git add ." rather than using "git add filename.extension" <br>
-### 7. For commiting Locally : git commit -m "Reason for Commit" -m "Description for commit"
-### 8. Steps for adding SSH key to Github : 
-   Apply these Git commands
-   #### Step 1: ssh-keygen -t rsa -b 4096 -C "email_address_added_to_Github" <br>
-   #### Step 2: eval $(ssh-agent -s) <br>
-   #### Step 3: ssh-add ~/.ssh/id_rsa <br>
-   #### Step 4: clip < ~/.ssh/id_rsa.pub <br>
-   Now after Copying the Public Key go to Github -> Profile -> Settings -> SSH and GPG Keys and then add <br>
-   the ssh key .
- ### 9. For pushing files in Repo : git push origin main/master   
- ### 10. For getting back to Previous Directory : cd ..
- ### 11. What are the steps if we make an repository locally and want it to publish in Github :
-   #### Step 1 : git init <br>
-   it initialize a git repository in current folder .
-   #### Step 2 : git add . <br>
-   it trackes all the files .
-   #### Step 3 : git commit -m "Reason for Commit" -m "Description for commit" <br>
-   for committing locally
-   #### Step 4 : Now we will make a repo in GIthub and will copy the SSH link .
-   #### Step 5 : git remote add origin SSH_Link <br>
-   it will publish the repo live in the github repo
-   ####  For checking Step 6 : git remote -v
-   #### Step 7 : git push origin main/master <br>
-   Finally the repository which we created locally will be published
    
    
    
