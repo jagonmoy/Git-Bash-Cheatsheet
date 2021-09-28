@@ -30,9 +30,9 @@
 - ### For staging all the files which are descendant of current directory
       git add .
 - ### For staging all the files except the deleted files
-      git add *.fileExtension
+      git add *
 - ### For staging all the files of a similar type
-      git add 
+      git add *.fileExtension
 
   ### One may think that "git add ." and "git add --all" are same . But They are not same If current directory is a root directory then "git add ." and "git add --all" will be same otherwise they are not same . "git add ." only stage the files which are descendant of current directory <br><br>
 - ### For unstaging all the staged files 
@@ -45,7 +45,7 @@
       git commit -m "Reason for Commit" -m "description of commit"
 - ### For Unstaging all the committed files 
       git reset HEAD~
-- ###  For getting the deleted files back
+- ### For getting the deleted files back
       git reset --hard
 - ### For deleting a file which is staged after updating / not totally updated 
       git rm fileName.fileExtension
