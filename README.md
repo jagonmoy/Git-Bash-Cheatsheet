@@ -1,8 +1,20 @@
-### 1. For Cloning A repository : git clone link
-  <br> Link is the Github Repository Link given in Correposponding Repository <br>
-### 2. For Changing the Directory : cd directory_name
-  <br> Here directory_name is the name of the folder to which we are willing to go. <br>
-### 3. For listing all the files including the hidden files (example : .git file ) : ls -la
+
+### For making a Directory : mkdir folder_name
+   ## E.g : mkdir myfolder <br>
+
+### For Cloning A repository : git clone HTTPS_link_of_repository
+   ## E.g : git clone https://github.com/jagonmoy/Git-Bash-Cheatsheet.git <br>
+
+### For Changing the Directory : cd directory_name
+   ## E.g : Suppose there is a folder "MyFolder"  <br>
+        ## cd MyFolder
+
+### For Creating a file in a directory/folder : touch filename.extension
+   ## E.g : Suppose I want to create a file name file1.txt in current directory 
+      ## touch file1.txt
+
+### For initializing a git repository : git init
+
 ### 4. For showing all the files in a repository which were updated,deleted or created : git status
 ### 5. For Tracking a particular file which is not tracked : git add file_name_with_extension
 ### 6. For Tracking all the files including Untracked,modified : git add .
