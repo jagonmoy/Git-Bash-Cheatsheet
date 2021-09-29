@@ -1,4 +1,6 @@
 
+- ### opening visual studio Code
+      code
 - ### For making a Directory : 
       mkdir directory_name 
 - ### For Changing the Directory : 
@@ -57,6 +59,34 @@
       git rm folderName
 - ### for deleting all the files/directories that are descendant to the folder
       git rm -r folderName
+- ### For showing all the branches 
+      git branch
+- ### For creating a branch 
+      git branch branch_name
+  ### When we create a new branch it contains all the directories/files from it's current branch <br><br>
+- ### For Switching a Branch 
+      git checkout branch_name
+
+- ### If we make any changes that can be updating,inserting or deleting a file in a branch and commit it , then it doesn't affect the other branches. If we visit other branches we will not see any changes there though we made some changes in our previous branch.
+
+- ### Suppose In our System There is two branches , One is Branch_1 and other one is Branch_2  . In Branch_1 we made a change in file1.txt and in Branch_2 we made a change in file2.txt . Now I am in Branch_1 and I also like to include the changes in file2.txt which was made in Branch _2 . How to do it ??? We can use git merge to do it .
+      git merge branch_2 -m "Some message"
+  ### or
+      git merge branch_2
+  ### Now Branch_1 will also include the changes made in Branch_2 . Same process applies for Branch_2 also if we want to include the changes made in Branch_1.
+      git merge branch_1 -m "Some message"
+  ### or
+      git merge branch_1
+
+- ### Now Suppose In our system from both of our branches Branch_1 and Branch_2 we made a change in a single file file1.txt . Now is it possible to merge ??? 
+  ### No , If we try to merge then It will show us a error message and will suggest us to resolve the merge conflict . After resolving the Conflict it will be possible to merge . <br> <br>
+
+- ### After doing Commit How to Push all the changes we made in local repository to remote reopository .
+      git push origin branch_name
+
+      
+
+
 
 
    
