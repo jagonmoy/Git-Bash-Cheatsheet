@@ -83,6 +83,22 @@
 
 - ### After doing Commit How to Push all the changes we made in local repository to remote reopository .
       git push origin branch_name
+- ### Now Suppose We made some changes in our remote repository and we would like to get this changes in our working directory . How to do it ? We can do it in two way one is by 'fetch' and other way is by 'pull'
+     - ### fetch : 'fetch' can get all the changes made in remote repository to our local repository but not in our working directory . So just doing the fetch command we will not be able to see the changes in our working directory . For this we will also have to another merge command. So the command will be 
+       ### Step 1 : 
+             git fetch origin branch_name
+       ### or 
+             git fetch
+       ### Step 2 :
+             git merge origin branch_name
+       ### or 
+             git merge
+   - ### pull : 'pull' can get all the changes direct to our working directory unlike remote repository . We don't have to merge .
+         git pull origin branch_name
+     ### or 
+         git pull
+     
+     
 
       
 
