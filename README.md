@@ -1,4 +1,7 @@
 
+[Excellent Bengali Crash Course for Learning Git and GitHub](https://www.youtube.com/watch?v=oe21Nlq8GS4)
+
+
 - ### opening visual studio Code
       code
 - ### For making a Directory : 
