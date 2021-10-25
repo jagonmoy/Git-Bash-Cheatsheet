@@ -69,6 +69,24 @@
   ### When we create a new branch it contains all the directories/files from it's current branch <br><br>
 - ### For Switching a Branch 
       git checkout branch_name
+- ### For renaming a Branch both locally and remotely
+    ### Step 01: <br><br>
+    ### Start by switching to the local branch which you want to rename:
+      git checkout "old_name"
+    ### Step 02: <br><br>
+    ### Rename the local branch by typing:
+      git branch -m "new_name"
+    ### Step 03 : <br><br>
+    ### At this point, you have renamed the local branch.
+
+    ### If you’ve already pushed the "old_name" branch to the remote repository , perform the next steps to rename the remote branch.
+
+    ### Push the <new_name> local branch and reset the upstream branch:
+      git push origin -u "new_name"
+    ### Step 04: <br><br>
+    ### Delete the "old_name" remote branch:
+      git push origin --delete <old_name>
+
 
 - ### If we make any changes that can be updating,inserting or deleting a file in a branch and commit it , then it doesn't affect the other branches. If we visit other branches we will not see any changes there though we made some changes in our previous branch.
 
