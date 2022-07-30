@@ -120,7 +120,18 @@
          git pull
      
      
-
+ - ### How to change the URI (URL) for a remote Git repository?
+     ### Step 01: <br><br>
+     ### Check Current URL
+       git remote -v    
+     #### suppose current repository is https://github.com/user/repo.git
+     ### Step 02: <br><br>
+     ### Change Current URL 
+       git remote set-url origin https://github.com/user/repo2.git
+     ### Step 03 : <br><br>
+     ### check Changed Url 
+       git remote -v 
+     #### now it will display https://github.com/user/repo2.git
       
 
 
